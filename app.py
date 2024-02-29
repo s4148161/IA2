@@ -31,6 +31,7 @@ def login():
     if request.method == "POST":
         email = request.form['email']
         password = request.form['password']
+        session['permission'] = 'user'
         if email == 'admin@admin' and password == 'admin': 
             session['userid'] = 1
             session['permission'] = 'admin'
@@ -88,6 +89,19 @@ def missionhistory():
     return render_template('missionhistory.html')
 
 
+@app.route('/look_up', methods=['GET','POST'])
+def look_up():
+    app.logger.info('look up')
+    if ROBOT:
+        ROBOT.look_up()
+    return jsonify({'message':'look up'})
+
+@app.route('/look_down', methods=['GET','POST'])
+def look_down():
+    app.logger.info('look down')
+    if ROBOT:
+        ROBOT.look_down()
+    return jsonify({'message':'look down'})
 
 
 
