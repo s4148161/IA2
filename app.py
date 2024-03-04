@@ -103,9 +103,37 @@ def look_down():
         ROBOT.look_down()
     return jsonify({'message':'look down'})
 
+@app.route('/move_forward/<angle>', methods=['GET','POST'])
+def move_forward(angle):
+    app.logger.info('move forward')
+    angle = int(angle)
+    if ROBOT:
+        try:
+            ROBOT.move_direction_time(timelimit=2, direction=angle)
+        except:
+            ROBOT.stop()
+    return jsonify({'message':'move forward'})
 
+@app.route('/stop', methods=['GET','POST'])
+def stop():
+    app.logger.info('stop')
+    if ROBOT:
+        ROBOT.stop()
+    return jsonify({'message':'stop'})
 
+@app.route('/start_mission', methods=['GET','POST'])
+def start_mission():
+    app.logger.info('start mission')
+    if ROBOT:
+        ROBOT.stop()
+    return jsonify({'message':'starting mission'})
 
+@app.route('/stop_mission', methods=['GET','POST'])
+def stop_mission():
+    app.logger.info('stop_mission')
+    if ROBOT:
+        ROBOT.stop()
+    return jsonify({'message':'stopping mission'})
 
 
 

@@ -204,3 +204,567 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:31] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:31] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:31] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:31] "GET /static/css/Slate.css HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:31] "GET /static/js/general.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:31] "GET /static/js/new_ajax_helper.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:31] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:36] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:36] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:43] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:47] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:50] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:52] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:54] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:57] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:57] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:58] "POST /look_down HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:52:59] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:53:00] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:53:03] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 11:53:06] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:01:12] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:01:17] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:01:17] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:01:21] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:01:23] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:01:26] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:03:25] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:03:30] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:03:30] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:03:40] "POST /look_down HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:03:40] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:03:43] "POST /look_down HTTP/1.1" 200 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:35] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:35] "GET /videofeed HTTP/1.1" 204 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:38] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:43] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:43] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:47] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:50] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:56] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:07:58] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:15:06] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:15:10] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:15:10] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:15:19] "POST /look_down HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:15:19] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:15:23] "POST /look_down HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:20:07] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:20:08] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:20:31] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:20:33] "POST /look_down HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:10] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:14] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:14] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:22] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:24] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:28] "POST /look_down HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:28] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:31] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:21:34] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:24:00] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:24:05] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:24:05] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:24:13] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:24:15] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:27:07] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:27:07] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:23] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:24] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:24] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:24] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:24] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:24] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:24] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:24] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:30] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:31] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:31] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:31] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:31] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:31] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:31] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:35] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:35] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:moving
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:29:39] "POST /move HTTP/1.1" 200 -
+INFO:flask.app:moving
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:30:06] "POST /move HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:30:10] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:30:12] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:30:14] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:30:16] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:30:34] "POST /move_forward HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:40] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:40] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:40] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:40] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:40] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:40] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:40] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:44] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:31:45] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:32:58] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:32:58] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:32:58] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:32:58] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:32:58] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:32:58] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:32:59] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:33:02] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:33:03] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:33:16] "POST /move_forward HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:36:03] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:36:07] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:36:08] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.26 - - [01/Mar/2024 12:36:10] "POST /move_forward HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:22] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:22] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:22] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:22] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:22] "GET /static/js/new_ajax_helper.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:22] "GET /static/js/general.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:22] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:41] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:41] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:46] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:49] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:52] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:57] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:03:59] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:01] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:03] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:05] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:27] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:30] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:31] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:32] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:34] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:04:36] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:05:41] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:05:51] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:05:52] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:Login
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:09:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:09:53] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:09:53] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:09:53] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:09:53] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:09:54] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Login
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:00] "POST / HTTP/1.1" 302 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:00] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:00] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:00] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:02] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:04] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:05] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:06] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:08] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:10:10] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:39] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:41] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:45] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:45] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:47] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:49] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:50] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:51] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:54] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:11:55] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:00] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:04] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:05] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:07] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:09] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:11] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:13] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:25] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:28] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:29] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:14:34] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:03] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:04] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:06] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:08] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:09] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:41] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:42] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:43] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:43] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:43] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:43] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:43] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:43] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:47] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:47] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:15:49] "POST /move_forward/270 HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:16] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:21] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:21] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:23] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:25] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:26] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:27] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:29] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:29] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:29] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:31] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:31] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:31] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:31] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:31] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:31] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:31] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:32] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:33] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:35] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:17:36] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:16] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:16] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:16] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:16] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:16] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:16] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:16] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:17] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:18] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:45] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:45] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:45] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:45] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:45] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:45] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:46] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:50] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:50] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:52] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:54] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:54] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:55] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:55] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:55] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:55] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:55] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:55] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:56] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:56] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:18:57] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:45] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:45] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:45] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:45] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:45] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:45] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:46] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:50] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:50] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:53] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:54] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:57] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:19:59] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:10] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:10] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:10] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:10] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:10] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:10] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:11] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:12] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:14] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:21] "POST /look_down HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:21] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:24] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:25] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:20:27] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:01] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:01] "GET /static/css/Slate.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:01] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:01] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:01] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:01] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:01] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:06] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:06] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:10] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:16] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:38] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:38] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:21:41] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:44:54] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:45:00] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:45:00] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:47:22] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.29 - - [04/Mar/2024 10:47:22] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:35] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:35] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:35] "GET /static/css/Slate.css HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:35] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:35] "GET /static/js/new_ajax_helper.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:35] "GET /static/js/general.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:35] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:36] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:40] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:40] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:41] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:41] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 08:59:47] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:00:35] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:00:37] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:00:40] "POST /look_up HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:00:43] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:05:11] "GET /mission HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:05:15] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:05:15] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:05:19] "POST /move_forward/90 HTTP/1.1" 200 -
