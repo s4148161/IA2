@@ -124,9 +124,16 @@ def stop():
 @app.route('/start_mission', methods=['GET','POST'])
 def start_mission():
     app.logger.info('start mission')
+    red_num = request.form['red_num']
+    green_num = request.form['green_num']
+    blue_num = request.form['blue_num']
+
     if ROBOT:
-        ROBOT.stop()
-    return jsonify({'message':'starting mission'})
+        try:
+            ROBOT.automated_search(red_num, green_num, blue_num)
+        except:
+            ROBOT.stop()
+    return jsonify({'message':'starting mission', 'red_num':red_num})
 
 @app.route('/stop_mission', methods=['GET','POST'])
 def stop_mission():

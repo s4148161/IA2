@@ -128,7 +128,7 @@ function start_mission()
 	formobject.append("green_num", green_num.value);
 	formobject.append("blue_num", blue_num.value);
         new_ajax_helper('/start_mission',defaulthandler,formobject);
-	robot_buttons.style.display = none;
+	robot_buttons.style.display = "none";
     }
 }
 
@@ -139,7 +139,7 @@ function stop_mission()
 {
     if (robot_loaded == 1)
     {
-	robot_buttons.style.display = block;
+	robot_buttons.style.display = "block";
         new_ajax_helper('/stop_mission');
     }
 }

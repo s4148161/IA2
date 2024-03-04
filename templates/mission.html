@@ -27,9 +27,23 @@
                 <button id="stop_button" type="button" class="btn btn-outline-primary">Stop Robot</button>
             </div>
         </div>
+	<div id="mission_tab" class="col-4 mission">
+	    <h2>Set Mission</h2>
+	    <br/><br/>
+	    <label for="blue">Number of Blue: </label>
+	    <input type="number" id="blue_num" name="blue_num" min="0" value="0"><br/><br/>
+	    <label for="red">Number of Red: </label>
+	    <input type="number" id="red_num" name="red_num" min="0" value="0"><br/><br/>
+	    <label for="green">Number of Green: </label>
+	    <input type="number" id="green_num" name="green_num" min="0" value="0"><br/><br/>
+
+	    <button id="start_mission_button" type="button" class="btn btn-secondary">Start Mission</button>
+	    <button id="stop_mission_button" type="button" class="btn btn-danger">Stop Mission</button>
+	
+	</div>
     </div>
     <div>
-	<h1 id="mission_tab" class="col-4 mission">Mission</h1>
+	<div></div>
     </div>
 {% endblock %}
 {% block scripts %}
