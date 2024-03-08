@@ -131,7 +131,9 @@ def start_mission():
     if ROBOT:
         try:
             ROBOT.automated_search(red_num, green_num, blue_num)
-        except:
+        except Exception as e:
+            print(e)
+            ROBOT.stop_automated_search()
             ROBOT.stop()
     return jsonify({'message':'starting mission', 'red_num':red_num})
 
