@@ -26,8 +26,27 @@ class Robot(RobotInterface):
 
         while self.routine == 'automated_search' and time.time() < endtime:
             self.SOUND.say('Searching for the colour red')
-            data = self.move_direction_until_detection(movetype='turnleft',distanceto=250,detection_types=['colour'],detection_colours=['red'],timelimit=2,confirmlevel=1)
-            self.SOUND.say('Colour detected')
+            self.look_up()
+            data = self.move_direction_until_detection(movetype='turnleft',distanceto=250,detection_types=['colour'],detection_colours=['red'],timelimit=5,confirmlevel=1)
+            print(data)
+            found = False
+            if 'red' in data['detect_colour']:
+                if 'found' in data['detect_colour']['red']:
+                    found = True
+
+            self.stop()
+            if found:
+                data = self.move_toward_colour_detected(colour='red')
+                self.look_down()
+                data = self.move_toward_colour_detected(colour='red')
+                data = self.rotate_arm_until_colour_detected_is_centered('red')
+                print(data)
+                #data = self.pick_up_centred_object_with_lookdown(y)
+            else:
+                print("no red")
+
+
+            self.logger.info(data) 
             break
 
         return

@@ -12,3 +12,40 @@
 2024-03-08 14:51:01,683 - Robot - INFO - Beginning Automated Search
 2024-03-08 14:52:56,245 - Robot - INFO - Beginning Automated Search
 2024-03-08 14:54:44,224 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:04:49,332 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:04:52,742 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:04:56,809 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710468292.82546, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468294.8299508}
+2024-03-15 12:04:59,952 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710468296.06993, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468298.0740483}
+2024-03-15 12:05:37,249 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:05:44,360 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710468340.5298882, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468342.5339768}
+2024-03-15 12:05:57,779 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:06:49,432 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:06:56,524 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710468412.661035, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468414.665934}
+2024-03-15 12:07:45,727 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:07:56,138 - Robot - INFO - {'command': 'move_toward_colour_detected', 'starttime': 1710468474.8690805, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 11877.5, 'rect': ((290.5, 346.5), (89.0, 153.0), -0.0), 'time': 1710468476.0783138}}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468476.1387527}
+2024-03-15 12:08:26,661 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:08:35,149 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710468509.9252594, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468511.9313083}
+2024-03-15 12:09:00,802 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:09:12,408 - Robot - INFO - {'command': 'move_toward_colour_detected', 'starttime': 1710468552.1213732, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 8070.5, 'rect': ((302.0, 433.5), (104.0, 91.0), -0.0), 'time': 1710468552.1077447}}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468552.408015}
+2024-03-15 12:10:37,163 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:10:44,292 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710468640.4254043, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468642.446181}
+2024-03-15 12:10:58,399 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:11:07,882 - Robot - INFO - {'command': 'move_toward_colour_detected', 'starttime': 1710468667.5644717, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 4916.5, 'rect': ((308.5, 452.5), (133.0, 53.0), 0.0), 'time': 1710468667.8066316}}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468667.882351}
+2024-03-15 12:11:44,850 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:11:53,211 - Robot - INFO - {'command': 'move_toward_colour_detected', 'starttime': 1710468712.9330566, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 8631.0, 'rect': ((301.5, 356.5), (87.0, 109.0), -0.0), 'time': 1710468712.927931}}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710468713.2115746}
+2024-03-15 12:19:57,626 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:20:12,336 - Robot - INFO - {'command': 'move_toward_colour_detected', 'starttime': 1710469211.3909929, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 22021.0, 'rect': ((304.045654296875, 398.6524353027344), (140.58453369140625, 187.01321411132812), -10.954063415527344), 'time': 1710469212.3228283}}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710469212.3367665}
+2024-03-15 12:27:27,848 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:27:36,476 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710469652.6239724, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710469654.628091}
+2024-03-15 12:27:46,523 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:27:55,196 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710469671.3414755, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710469673.3459547}
+2024-03-15 12:28:40,736 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:29:41,070 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:30:53,646 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:31:00,477 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710469858.4688828, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710469860.4734597}
+2024-03-15 12:32:07,549 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:32:14,331 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710469932.321022, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710469934.326887}
+2024-03-15 12:34:26,578 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:34:50,236 - Robot - INFO - {'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710470080.220487, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 3173.5, 'rect': ((304.1011047363281, 427.4382019042969), (59.662723541259766, 118.875732421875), -12.994616508483887), 'time': 1710470090.2222047}}, 'detect_letter': {}, 'detect_model': {}, 'x': 313.6159362792969, 'y': 425.0596618652344, 'endtime': 1710470090.2361755}
+2024-03-15 12:35:30,651 - Robot - INFO - Beginning Automated Search
+2024-03-15 12:35:42,299 - Robot - INFO - {'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710470139.9750795, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 3642.0, 'rect': ((318.74761962890625, 422.5555419921875), (62.749237060546875, 126.46487426757812), -10.56101131439209), 'time': 1710470142.2681959}}, 'detect_letter': {}, 'detect_model': {}, 'x': 318.74761962890625, 'y': 422.5555419921875, 'endtime': 1710470142.2985063}

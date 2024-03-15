@@ -141,7 +141,7 @@ def start_mission():
 def stop_mission():
     app.logger.info('stop_mission')
     if ROBOT:
-        ROBOT.stop()
+        ROBOT.stop_automated_search()
     return jsonify({'message':'stopping mission'})
 
 
