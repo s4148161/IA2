@@ -1,7 +1,7 @@
 from flask import *
 from interfaces.databaseinterface import Database
 from interfaces.hashing import *
-from robot import Robot
+#from robot import Robot
 import logging, time, sys
 
 #---CONFIGURE APP---------------------------------------------------
@@ -55,7 +55,7 @@ def load_robot():
     global ROBOT
     if not ROBOT:
         app.logger.info('Loading Robot')
-        ROBOT = Robot(DATABASE)
+        #ROBOT = Robot(DATABASE)
         time.sleep(3) #takes 3 seconds to load the robot
     return jsonify({'message':'robot loaded'})
 
@@ -129,6 +129,7 @@ def start_mission():
     blue_num = request.form['blue_num']
 
     if ROBOT:
+
         try:
             ROBOT.automated_search(red_num, green_num, blue_num)
         except Exception as e:
@@ -136,6 +137,7 @@ def start_mission():
             ROBOT.stop_automated_search()
             ROBOT.stop()
     return jsonify({'message':'starting mission', 'red_num':red_num})
+
 
 @app.route('/stop_mission', methods=['GET','POST'])
 def stop_mission():

@@ -996,6 +996,7 @@ INFO:flask.app:start mission
 INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:48:48] "POST /start_mission HTTP/1.1" 200 -
 INFO:flask.app:stop_mission
 INFO:werkzeug:10.0.74.27 - - [05/Mar/2024 09:48:51] "POST /stop_mission HTTP/1.1" 200 -
+<<<<<<< HEAD
 INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
@@ -1319,3 +1320,103 @@ INFO:werkzeug:10.0.74.26 - - [08/Mar/2024 14:54:41] "GET /videofeed HTTP/1.1" 20
 INFO:flask.app:start mission
 INFO:Robot:Beginning Automated Search
 INFO:werkzeug:10.0.74.26 - - [08/Mar/2024 14:54:50] "POST /start_mission HTTP/1.1" 200 -
+=======
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.161.133:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 148-415-792
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.161.133:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 148-415-792
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 148-415-792
+INFO:werkzeug: * Detected change in '/Users/callummcmahon/Library/CloudStorage/GoogleDrive-s4148161@terrace.qld.edu.au/My Drive/Folders/02 School/01 Year 12/Term 1/IT/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 148-415-792
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.160.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 148-415-792
+INFO:app:Login
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:40] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:40] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:40] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:40] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:46] "[32mGET /mission HTTP/1.1[0m" 302 -
+INFO:app:Login
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:46] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:46] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:46] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:46] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:app:Login
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:52] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:52] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:52] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:52] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:31:52] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:app:Login
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:03] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:03] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:03] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:03] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:03] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:03] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:03] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:15] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:16] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:16] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:16] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:16] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:16] "[36mGET /static/js/mission.js HTTP/1.1[0m" 304 -
+INFO:app:Loading Robot
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:20] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:20] "[35m[1mGET /videofeed HTTP/1.1[0m" 204 -
+INFO:app:Shut down robot
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:28] "POST /shutdown_robot HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:37] "GET /registration HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:37] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:37] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:37] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:37] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:38] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:38] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:38] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:38] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:38] "[36mGET /static/js/mission.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:38] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:38] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "GET /registration HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[33mGET /static/css/Slate.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[36mGET /static/js/general.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[36mGET /static/js/new_ajax_helper.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[36mGET /static/css/custom.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Mar/2024 13:32:39] "[36mGET /static/js/mission.js HTTP/1.1[0m" 304 -
+>>>>>>> 792d3ef (fix)
