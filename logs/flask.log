@@ -1698,3 +1698,598 @@ INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:28] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:28] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:29] "GET /static/js/new_ajax_helper.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:29] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:29] "GET /static/js/general.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:29] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:29] "GET /static/js/mission.js HTTP/1.1" 304 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:33] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:15:33] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:16:08] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:16:10] "POST /stop_mission HTTP/1.1" 200 -
+INFO:Robot:{'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710720964.9273055, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'x': 0, 'y': 0, 'endtime': 1710720974.932071}
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:16:14] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:Robot:{'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710720992.0915108, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 15135.5, 'rect': ((319.9705810546875, 87.61767578125), (138.4878387451172, 125.8759765625), -75.96376037597656), 'time': 1710720994.9098237}}, 'detect_letter': {}, 'detect_model': {}, 'x': 319.9705810546875, 'y': 87.61767578125, 'endtime': 1710720994.935693}
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:16:34] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:Robot:{'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710721007.9285278, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 17440.5, 'rect': ((319.171630859375, 353.4539794921875), (134.25979614257812, 138.26869201660156), -27.552810668945312), 'time': 1710721010.9148118}}, 'detect_letter': {}, 'detect_model': {}, 'x': 319.171630859375, 'y': 353.4539794921875, 'endtime': 1710721010.9528975}
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:16:50] "POST /start_mission HTTP/1.1" 200 -
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:18] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:18] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:18] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:18] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:18] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:18] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:19] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:23] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:24] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:47] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:25:53] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:26:06] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:26:40] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:26:46] "POST /start_mission HTTP/1.1" 200 -
+INFO:Robot:{'command': 'move_direction_until_detection', 'starttime': 1710721607.821963, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710721612.8257692}
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:26:52] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:27:05] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:29:58] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:03] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:10] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:13] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:13] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:13] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:13] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:13] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:13] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:14] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:18] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:31:18] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:33:03] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:33:03] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:33:03] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:33:21] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:33:22] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:33:35] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:33:52] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:01] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:36] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:36] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:36] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:36] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:36] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:36] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:36] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:40] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:40] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:34:52] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:35:02] "POST /stop_mission HTTP/1.1" 200 -
+INFO:Robot:{'command': 'pick_up_centered_object_with_look_down', 'starttime': 1710722109.196136, 'pickup': False, 'endtime': 1710722109.200547}
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:35:09] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:Robot:{'command': 'pick_up_centered_object_with_look_down', 'starttime': 1710722137.0509079, 'pickup': False, 'endtime': 1710722137.0550358}
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:35:37] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:Robot:{'command': 'pick_up_centered_object_with_look_down', 'starttime': 1710722217.6424506, 'pickup': True, 'endtime': 1710722228.1906114}
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:37:08] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:41:44] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:41:44] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:41:48] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:41:49] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:42:12] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:42:44] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:42:44] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:42:52] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:42:52] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:43:03] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:43:18] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:46:11] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:46:12] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:46:56] "POST /stop_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:51:23] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:51:24] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:51:29] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.74.15 - - [18/Mar/2024 10:51:29] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:Login
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:35] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:35] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:35] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:35] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:36] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Login
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:43] "POST / HTTP/1.1" 302 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:43] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:44] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:44] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:49] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:02:49] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:look down
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:03:06] "POST /look_down HTTP/1.1" 200 -
+INFO:flask.app:look up
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:03:09] "POST /look_up HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:Shut down robot
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:14:50] "POST /shutdown_robot HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:14:54] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:14:54] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:15:01] "POST /move_forward/90 HTTP/1.1" 200 -
+INFO:flask.app:move forward
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:15:05] "POST /move_forward/270 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:28] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:34] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:34] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:34] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:34] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:34] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:34] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:35] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:39] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:39] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:16:49] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:17:27] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:17:33] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:17:34] "POST /stop HTTP/1.1" 200 -
+INFO:Robot:{'command': 'was_object_pickup_successful', 'success': True, 'starttime': 1712636255.7299874, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 35687.0, 'rect': ((274.4999694824219, 386.49993896484375), (336.99993896484375, 184.99996948242188), 0.0), 'time': 1712636255.8807979}}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1712636256.332517}
+INFO:werkzeug:10.0.0.174 - - [09/Apr/2024 14:17:36] "POST /start_mission HTTP/1.1" 200 -
+                                                                                                                                                                                                        INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:51] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:52] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:52] "GET /static/css/custom.css HTTP/1.1" 304 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:52] "GET /static/js/general.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:52] "GET /static/js/new_ajax_helper.js HTTP/1.1" 304 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:52] "GET /static/js/mission.js HTTP/1.1" 304 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:56] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:31:57] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:35:30] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:35:30] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:35:34] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:35:34] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:36:45] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:36:51] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:37:59] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:37:59] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:38:03] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:38:03] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:38:08] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:40:01] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:40:08] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:41:16] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:41:16] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:41:20] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:41:20] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:41:32] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:43:46] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:43:56] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:43:59] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:43:59] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:44:03] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:44:03] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:45:38] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:45:38] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:45:42] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:45:43] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:46:15] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:46:24] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:46:25] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:46:27] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:46:27] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:46:31] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:46:31] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:50:07] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:50:07] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:50:12] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:50:12] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:51:48] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:turn on detection
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:51:54] "POST /turn_on_detection HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:51:58] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:51:58] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:52:02] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:52:02] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:turn on detection
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:52:04] "POST /turn_on_detection HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:52:56] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:52:56] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:52:56] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:01] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:01] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:01] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:08] "POST /stop_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:08] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:08] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:18] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:18] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:28] "POST /stop_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:29] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:31] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:31] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:32] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:32] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:32] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:32] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:32] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:32] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:33] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:33] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Shut down robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:38] "POST /shutdown_robot HTTP/1.1" 200 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:53:46] "POST /load_robot HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:14] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:14] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:15] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:16] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:27] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:27] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:32] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:32] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:54] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:57] "POST /stop HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:57] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:54:58] "POST /stop HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:09] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:09] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:13] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:13] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:34] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:36] "POST /stop HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:36] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:36] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:58] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:57:59] "POST /stop HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:59:34] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:59:34] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:59:39] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:59:39] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:59:55] "POST /stop_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:59:55] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 13:59:56] "POST /stop HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:00:34] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:00:34] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:00:39] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:00:39] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:05:29] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:05:30] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:05:43] "POST /start_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:12] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:13] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:22] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:31] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:flask.app:Shut down robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /static/js/new_ajax_helper.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /static/css/custom.css HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /static/js/general.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /static/js/mission.js HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /videofeed HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:35] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:36] "POST /shutdown_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:37] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:37] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:41] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:06:42] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:07:00] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:07:01] "POST /start_mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:07:01] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:07:05] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:turn on detection
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:07:11] "POST /turn_on_detection HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:09:34] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:09:34] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:flask.app:Loading Robot
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:09:38] "POST /load_robot HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:09:38] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:start mission
+INFO:Robot:Beginning Automated Search
+INFO:flask.app:stop_mission
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:09:58] "POST /stop_mission HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:03] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:06] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:10] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:10] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:10] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:10] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:11] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:11] "POST /stop HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:21] "POST /stop HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:22] "GET /mission HTTP/1.1" 200 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:23] "GET /static/css/Slate.css HTTP/1.1" 404 -
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:23] "GET /videofeed HTTP/1.1" 200 -
+INFO:flask.app:stop
+INFO:werkzeug:10.0.0.174 - - [11/Apr/2024 14:10:25] "POST /stop HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/pi/Desktop/IA2/robot.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 189-236-848

@@ -49,3 +49,55 @@
 2024-03-15 12:34:50,236 - Robot - INFO - {'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710470080.220487, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 3173.5, 'rect': ((304.1011047363281, 427.4382019042969), (59.662723541259766, 118.875732421875), -12.994616508483887), 'time': 1710470090.2222047}}, 'detect_letter': {}, 'detect_model': {}, 'x': 313.6159362792969, 'y': 425.0596618652344, 'endtime': 1710470090.2361755}
 2024-03-15 12:35:30,651 - Robot - INFO - Beginning Automated Search
 2024-03-15 12:35:42,299 - Robot - INFO - {'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710470139.9750795, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 3642.0, 'rect': ((318.74761962890625, 422.5555419921875), (62.749237060546875, 126.46487426757812), -10.56101131439209), 'time': 1710470142.2681959}}, 'detect_letter': {}, 'detect_model': {}, 'x': 318.74761962890625, 'y': 422.5555419921875, 'endtime': 1710470142.2985063}
+2024-03-18 10:15:46,964 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:16:14,932 - Robot - INFO - {'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710720964.9273055, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'x': 0, 'y': 0, 'endtime': 1710720974.932071}
+2024-03-18 10:16:23,157 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:16:34,935 - Robot - INFO - {'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710720992.0915108, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 15135.5, 'rect': ((319.9705810546875, 87.61767578125), (138.4878387451172, 125.8759765625), -75.96376037597656), 'time': 1710720994.9098237}}, 'detect_letter': {}, 'detect_model': {}, 'x': 319.9705810546875, 'y': 87.61767578125, 'endtime': 1710720994.935693}
+2024-03-18 10:16:40,754 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:16:50,953 - Robot - INFO - {'command': 'rotate_arm_until_colour_detected_is_centered', 'starttime': 1710721007.9285278, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 17440.5, 'rect': ((319.171630859375, 353.4539794921875), (134.25979614257812, 138.26869201660156), -27.552810668945312), 'time': 1710721010.9148118}}, 'detect_letter': {}, 'detect_model': {}, 'x': 319.171630859375, 'y': 353.4539794921875, 'endtime': 1710721010.9528975}
+                                                                    2024-03-18 10:25:26,312 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:25:52,259 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:26:27,763 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:26:43,039 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:26:52,830 - Robot - INFO - {'command': 'move_direction_until_detection', 'starttime': 1710721607.821963, 'detect_line': {}, 'detect_colour': {}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1710721612.8257692}
+2024-03-18 10:26:58,301 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:29:40,663 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:33:24,028 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:33:49,354 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:34:42,810 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:35:09,200 - Robot - INFO - {'command': 'pick_up_centered_object_with_look_down', 'starttime': 1710722109.196136, 'pickup': False, 'endtime': 1710722109.200547}
+2024-03-18 10:35:18,172 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:35:37,055 - Robot - INFO - {'command': 'pick_up_centered_object_with_look_down', 'starttime': 1710722137.0509079, 'pickup': False, 'endtime': 1710722137.0550358}
+2024-03-18 10:36:47,597 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:37:08,190 - Robot - INFO - {'command': 'pick_up_centered_object_with_look_down', 'starttime': 1710722217.6424506, 'pickup': True, 'endtime': 1710722228.1906114}
+2024-03-18 10:41:51,805 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:42:54,286 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:43:13,353 - Robot - INFO - Beginning Automated Search
+2024-03-18 10:51:31,949 - Robot - INFO - Beginning Automated Search
+2024-04-09 14:16:41,710 - Robot - INFO - Beginning Automated Search
+2024-04-09 14:17:36,332 - Robot - INFO - {'command': 'was_object_pickup_successful', 'success': True, 'starttime': 1712636255.7299874, 'detect_line': {}, 'detect_colour': {'red': {'found': True, 'area': 35687.0, 'rect': ((274.4999694824219, 386.49993896484375), (336.99993896484375, 184.99996948242188), 0.0), 'time': 1712636255.8807979}}, 'detect_letter': {}, 'detect_model': {}, 'endtime': 1712636256.332517}
+2024-04-11 13:36:45,855 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:36:51,813 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:38:08,499 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:40:08,609 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:41:32,970 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:44:09,349 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:46:35,247 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:50:20,942 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:52:23,685 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:53:04,448 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:53:07,261 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:53:16,899 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:53:50,802 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:53:50,802 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:54:42,743 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:57:21,519 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:57:22,168 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:57:46,697 - Robot - INFO - Beginning Automated Search
+2024-04-11 13:59:49,141 - Robot - INFO - Beginning Automated Search
+2024-04-11 14:00:44,801 - Robot - INFO - Beginning Automated Search
+2024-04-11 14:05:42,265 - Robot - INFO - Beginning Automated Search
+2024-04-11 14:06:21,060 - Robot - INFO - Beginning Automated Search
+2024-04-11 14:06:46,333 - Robot - INFO - Beginning Automated Search
+2024-04-11 14:06:46,333 - Robot - INFO - Beginning Automated Search
+2024-04-11 14:09:48,103 - Robot - INFO - Beginning Automated Search
