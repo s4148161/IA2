@@ -52,7 +52,7 @@ class CameraInterface():
         self.detection_colours = []
         self.colour_shift = 0 #if more than one colour, colour will shift each frame
         self.task_shift = 0 #if more than one task, the task will shift each frame
-        self.min_detection_area = 300
+        self.min_detection_area = 800
         self.detection_data_expire_time = 1
         self.clear_temp_detection_data = False
         self.output_text = False

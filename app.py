@@ -15,7 +15,7 @@ DATABASE = Database("databases/test.db", app.logger)
 ROBOT = None
 
 #---VIEW FUNCTIONS----------------------------------------------------
-# Backdoor
+# Backdoor 
 @app.route('/backdoor')
 def backdoor():
     if DATABASE:
@@ -131,7 +131,7 @@ def start_mission():
     if ROBOT:
 
         try:
-            ROBOT.automated_search(red_num, green_num, blue_num)
+            ROBOT.automated_search(int(red_num), int(green_num), int(blue_num))
         except Exception as e:
             print(e)
             ROBOT.stop_automated_search()
@@ -143,7 +143,7 @@ def start_mission():
 def stop_mission():
     app.logger.info('stop_mission')
     if ROBOT:
-        ROBOT.stop()
+        ROBOT.stop_automated_search()
     return jsonify({'message':'stopping mission'})
 
 
