@@ -23,36 +23,42 @@
 
   <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">WALL-E <i class="fa-solid fa-robot"></i></a>
+      <a class="navbar-brand" href="/">Waste Management Robot</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
+          {% if 'userid' not in session %}
           <li class="nav-item">
-            <a class="nav-link active" href="/">Login
-              <span class="visually-hidden">(current)</span>
-            </a>
+            <a class="nav-link active" href="/">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/registration">Registration</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/mission">Mission</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/missionhistory">Mission History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/maintenance">Maintenance</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/admin">Admin</a>
-          </li>
+          {% endif %}
+          {% if 'userid' in session %}
+            <li class="nav-item">
+              <a class="nav-link" href="/mission">Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/missionhistory">Mission History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/maintenance">Maintenance</a>
+            </li>
+          {% endif %}
+          {% if permission == 'admin' %}
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">Admin</a>
+            </li>
+          {% endif %}
         </ul>
         <form class="d-flex">
-            <a style="margin-top:5px;" class="nav-link" href="/logout">Log out</a> 
-          <button id="exit_button" class="btn btn-secondary my-2 my-sm-0" type="button">Exit</button>
+            {% if 'userid' in session %}
+              <a style="margin-top:5px;" class="nav-link" href="/logout">Log out</a> 
+              <button id="exit_button" class="btn btn-secondary my-2 my-sm-0" type="button">Exit</button>
+            {% endif %}
         </form>
       </div>
     </div>

