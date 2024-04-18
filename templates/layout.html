@@ -34,7 +34,7 @@
             <a class="nav-link active" href="/">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/registration">Registration</a>
+            <a class="nav-link" href="/register">Register</a>
           </li>
           {% endif %}
           {% if 'userid' in session %}
@@ -48,7 +48,7 @@
               <a class="nav-link" href="/maintenance">Maintenance</a>
             </li>
           {% endif %}
-          {% if permission == 'admin' %}
+          {% if session['permission'] == 'admin' %}
             <li class="nav-item">
               <a class="nav-link" href="/admin">Admin</a>
             </li>

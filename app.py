@@ -11,7 +11,7 @@ sys.tracebacklimit = 10
 app.config['SECRET_KEY'] = "Type in a secret line of text"
 
 #---EMBED OBJECTS---------------------------------------------------
-DATABASE = Database("databases/test.db", app.logger)
+DATABASE = Database("databases/db.db", app.logger)
 ROBOT = None
 
 #---VIEW FUNCTIONS----------------------------------------------------
@@ -23,28 +23,82 @@ def backdoor():
         results = DATABASE.ViewQuery("SELECT * FROM users")
     return jsonify(results)
 
+@app.route('/')
+def missionredirect():
+    return redirect('/mission') #redirect to the mission page
+
 # Login as the admin user
-@app.route('/', methods=["GET","POST"])
+@app.route('/login', methods=['GET','POST']) #allow both get and post methods to the route
 def login():
     if 'userid' in session:
-        return redirect('/mission')
-    app.logger.info("Login")
-    if request.method == "POST":
-        email = request.form['email']
-        password = request.form['password']
-        session['permission'] = 'user'
-        if email == 'admin@admin' and password == 'admin': 
-            session['userid'] = 1
-            session['permission'] = 'admin'
+        return redirect('/') #if the user is already logged in redirect to the mission page
 
-            return redirect('./mission') #takes 3 seconds for the CAMERA to start
-    return render_template("login.html")
+    error = ""
+    if request.method == "POST": #user has submitted the form
+        email = request.form['email']
+        password = request.form['password'] #get email and password
+    
+        userlist = DATABASE.ViewQuery("SELECT * FROM users WHERE email = ?", (email,)) #get all users with matching email
+        if not userlist:
+            error = "No user exists with that email address" 
+            return render_template("login.html", message=error) #return error to page
+        else:
+            user = userlist[0] #get the user from the sql query results
+            p = user['password']
+            if check_password(p, password) == False: #check if the hashed passwords match
+                error = 'Password incorrect!'
+            else:
+                session['userid'] = user['userid']
+                if email == "admin@admin":
+                    session['permission'] = 'admin'
+                else:
+                    session['permission'] = 'user'
+
+                return redirect('/mission') #after user has logged in redirect them to the mission page
+            return render_template("login.html", message=error)
+    else:
+        return render_template("login.html", message=error) #render the login page
+
+@app.route('/register', methods=['GET','POST'])
+def register():
+    if 'userid' in session:
+        return redirect('/mission') #if the user is logged in return them to the mission page
+
+    error = "Please register"
+    if request.method == "POST": #if the form is submitted
+        email = request.form['email'].strip()
+        password = request.form['password']
+        passwordconfirm = request.form['passwordconfirm']
+        firstname = request.form['firstname'].strip()
+        lastname = request.form['lastname'].strip()
+        userlist = DATABASE.ViewQuery("SELECT * FROM users WHERE email = ?", (email,)) #get all users with the email
+
+        if len(password) < 8: #check password length
+            error = "Password is too short"
+        elif userlist != False: #check if another user with that email exists
+            error = "Another account with that email already exists"
+        else:
+            if passwordconfirm != password: #check to see if passwords match
+                error = "Passwords do not match"
+            else:
+                DATABASE.ModifyQuery("INSERT INTO users (email, password, firstname, lastname) VALUES (?,?,?,?)", (email, hash_password(password), firstname, lastname))
+                userid = DATABASE.ViewQuery("SELECT userid FROM users WHERE email = ?", (email,))
+                if email == "admin@admin":
+                    session['permission'] = 'admin'
+                else:
+                    session['permission'] = 'user'
+
+                session['userid'] = userid
+                return redirect('./')
+
+    return render_template("register.html", message=error) #render the register page
+
 
 # Dashboard for the robot
 @app.route('/mission', methods=['GET','POST'])
 def mission():
-    if not 'userid' in session:
-        return redirect('/')
+    if 'userid' not in session:
+        return redirect('/login')
     loaded = 0
     if ROBOT:
         loaded = 1
@@ -63,24 +117,31 @@ def load_robot():
 # YOUR FLASK CODE------------------------------------------------------------------------
 
 
-@app.route('/registration', methods=['GET','POST'])
-def register():
-
-    return render_template('registration.html')
 
 @app.route('/maintenance', methods=['GET','POST'])
 def maintenance():
     if 'userid' not in session:
         return redirect('/')
 
+    if request.method == "POST":
+        robotid = request.form['robotid']
+        date = request.form['date']
+        problem = request.form['description']
+
+        DATABASE.ModifyQuery("INSERT INTO maintenance (userid, robotid, date, problem) VALUES (?,?,?,?)", (session['userid'], robotid, date, problem))
+
     return render_template('maintenance.html')
 
 @app.route('/admin', methods=['GET','POST'])
 def admin():
-    if 'userid' not in session and session['permission'] != 'admin':
+    if 'userid' in session and session['permission'] == 'admin':
+        results = ""
+        if DATABASE:
+            results = DATABASE.ViewQuery("SELECT * FROM users")
+        return jsonify(results)
+    else:
         return redirect('/')
 
-    return render_template('admin.html')
 
 @app.route('/missionhistory', methods=['GET','POST'])
 def missionhistory():
@@ -223,3 +284,4 @@ def exit():
 # main method called web server application
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True) #runs a local server on port 5000
+
