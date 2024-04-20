@@ -71,6 +71,8 @@ def register():
         passwordconfirm = request.form['passwordconfirm']
         firstname = request.form['firstname'].strip()
         lastname = request.form['lastname'].strip()
+        robotids = request.form['robotid']
+        robotids = robotids.split(",")
         userlist = DATABASE.ViewQuery("SELECT * FROM users WHERE email = ?", (email,)) #get all users with the email
 
         if len(password) < 8: #check password length
@@ -83,12 +85,17 @@ def register():
             else:
                 DATABASE.ModifyQuery("INSERT INTO users (email, password, firstname, lastname) VALUES (?,?,?,?)", (email, hash_password(password), firstname, lastname))
                 userid = DATABASE.ViewQuery("SELECT userid FROM users WHERE email = ?", (email,))
+                session['userid'] = userid[0]['userid']
+
+                for robot in robotids:
+                    robotid = int(robot)
+                    DATABASE.ModifyQuery("INSERT INTO robots (userid, robotid) VALUES (?,?)", (session['userid'], robotid))
+
                 if email == "admin@admin":
                     session['permission'] = 'admin'
                 else:
                     session['permission'] = 'user'
 
-                session['userid'] = userid
                 return redirect('./')
 
     return render_template("register.html", message=error) #render the register page
@@ -129,8 +136,14 @@ def maintenance():
         problem = request.form['description']
 
         DATABASE.ModifyQuery("INSERT INTO maintenance (userid, robotid, date, problem) VALUES (?,?,?,?)", (session['userid'], robotid, date, problem))
+    
+    robotids = DATABASE.ViewQuery("SELECT robotid FROM robots WHERE userid = ?", (session['userid'],))
+    ids = []
+    if robotids != False:
+        for id in robotids:
+            ids.append(id['robotid'])
 
-    return render_template('maintenance.html')
+    return render_template('maintenance.html', ids=ids)
 
 @app.route('/admin', methods=['GET','POST'])
 def admin():

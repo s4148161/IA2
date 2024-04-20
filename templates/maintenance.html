@@ -9,11 +9,13 @@
         <div class="form-group">
             <label for="exampleFormControlSelect1">Which robot has the problem?</label>
             <select class="form-control" name='robotid' id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                {% if ids != [] %}
+                {% for id in ids %}
+                <option>{{id}}</option>
+                {% endfor %}
+                {% else %}
+                <option>You have no robots</option>
+                {% endif %}
             </select>
         </div>
         <div class="form-group">
