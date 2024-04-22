@@ -262,7 +262,8 @@ class RobotInterface(MasterPiInterface):
         data['command'] = self.command
         data['starttime'] = time.time()
         #if y >= 225:
-        if y >= 100:
+        print(y)
+        if y >= 50:
             deltaY = int((480-y)/240*300)
             print(deltaY)
             self.grab_with_current_arm_rotation(deltaY)
@@ -276,7 +277,7 @@ class RobotInterface(MasterPiInterface):
         return data
     
     # Check if the pick up was successful
-    def was_object_pickup_successful(self, colour='red', timelimit=10):
+    def was_object_pickup_successful(self, colour='red', timelimit=3):
         
         self.command = "was_object_pickup_successful"
         self.CAMERA.add_detection_task("detect_colour")
@@ -423,9 +424,10 @@ class RobotInterface(MasterPiInterface):
 if __name__ == '__main__':
     ROBOT = RobotInterface()
     ROBOT.stop()
-    ROBOT.look_up()
+    ROBOT.look_down()
     input("Press Enter to Start")
-    ROBOT.SOUND.say("Loading")
+    #ROBOT.SOUND.say("Loading")
+    
     time.sleep(3) #A 3 second delay is required so the Camera has time to capture the stream
 
     ROBOT.show_camera = True
@@ -434,8 +436,12 @@ if __name__ == '__main__':
     time.sleep(1)
     
     ROBOT.CAMERA.turn_on_output_text()
-    ROBOT.auto_detection(timelimit=60)
-            
+    #ROBOT.auto_detection(timelimit=60)
+    data = ROBOT.rotate_arm_until_colour_detected_is_centered(colour='red')
+    height = data['y']
+    print(height)
+    ROBOT.pick_up_centered_object_with_look_down(height)
+    time.sleep(3)
     ROBOT.shutdown() 
     sys.exit(0)
     

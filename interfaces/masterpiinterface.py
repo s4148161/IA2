@@ -144,6 +144,11 @@ class MasterPiInterface():
         actiongroup.runAction("lookup")
         self.camera_pos = "lookup"
         return        
+
+    def look_up_closed(self):
+        actiongroup.runAction("lookupclosed")
+        self.camera_pos = "lookup"
+        return        
     
     # Stop current arm action
     def stop_current_arm_action(self):
@@ -158,15 +163,15 @@ class MasterPiInterface():
         return
     
     # Pick up a horizontally aligned object but adjust for the vertical position of the object
-    def grab_with_current_arm_rotation(self, deltaY=40): #set up to use a range between 0 and 300
+    def grab_with_current_arm_rotation(self, deltaY=423): #set up to use a range between 0 and 300
         Board.setPWMServoPulse(1, 1864, 1000)
         time.sleep(1)
         #Board.setPWMServoPulse(3, 800+deltaY*2, 2000)   #Board.setPWMServoPulse(3, 1000, 2000)
-        Board.setPWMServoPulse(3, 900+int(deltaY/1.5), 2000) #900+int(deltaY/2)
+        Board.setPWMServoPulse(3, 900+int(deltaY/1.5), 2000) #900+int(deltaY/2)   #900
         time.sleep(2)
-        Board.setPWMServoPulse(4, 2500-int(deltaY*1.7), 2000)  #Board.setPWMServoPulse(4, 1800, 2000) #2500-int(deltaY*2)
+        Board.setPWMServoPulse(4, 2500-int(deltaY*1.65), 2000)  #Board.setPWMServoPulse(4, 1800, 2000) #2500-int(deltaY*2)   #1.7
         time.sleep(2)
-        Board.setPWMServoPulse(5, 2050+int(deltaY*1.25), 2000)  #Board.setPWMServoPulse(5, 2400, 2000)  #2000+deltaY
+        Board.setPWMServoPulse(5, 2050+int(deltaY*1.25), 2000)  #Board.setPWMServoPulse(5, 2400, 2000)  #2000+deltaY  #2050 1.25
         time.sleep(2)
         Board.setPWMServoPulse(1, 1600, 2000) 
         time.sleep(2)
@@ -196,6 +201,7 @@ class MasterPiInterface():
 if __name__ == '__main__':
     ROBOT = MasterPiInterface()
     ROBOT.stop()
-    ROBOT.look_up()
+    ROBOT.look_down()
     ROBOT.grab_with_current_arm_rotation()
+    ROBOT.reset_arm()
 

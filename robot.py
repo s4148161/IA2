@@ -28,6 +28,7 @@ class Robot(RobotInterface):
     def automated_search(self,red=0,green=0,blue=0,timelimit=300):
         self.routine = 'automated_search'
         self.logger.info('Beginning Automated Search')
+        self.look_up()
 
         endtime = time.time() + timelimit
 
@@ -69,9 +70,14 @@ class Robot(RobotInterface):
                     #self.SOUND.say("Moving towards object")
                     print(detection_colours,found)
                     data = self.move_toward_colour_detected(colour=found)
+                    if self.routine != 'automated_search':
+                        break
                     self.look_down()
                     time.sleep(1)
                     data = self.move_toward_colour_detected(colour=found) #Moves toward the block
+
+                    if self.routine != 'automated_search':
+                        break
 
                     data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
                     
@@ -80,25 +86,30 @@ class Robot(RobotInterface):
                     data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
 
                     while (self.was_object_pickup_successful(colour=found))['success'] == False:
+                        if self.routine != 'automated_search':
+                            break
+                        data = self.move_toward_colour_detected(colour=found) #Moves toward the block
+
                         data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
 
                         data = self.pick_up_centered_object_with_look_down(data['y'])
+                        print(self.was_object_pickup_successful(colour=found))
 
                     #This loop will repeat aligning the arm with the block and attempting to pick it up
-                    '''
-                    data = self.look_up()
+                    data = self.look_up_closed()
                     #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Look Up", data, "Look Up", starttime, time.time(), "Yes"))
                 	#starttime = time.time()
-                    data = self.move_toward_colour_detected(colour='yellow')
+                    data = self.move_direction_until_detection(movetype='turnright',distanceto=250,detection_types=['colour'],detection_colours=['white'],timelimit=2,confirmlevel=1)
+
+                    data = self.move_toward_colour_detected(colour='white')
                     #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
                     time.sleep(1)
                 	#starttime = time.time()
-                    data = self.move_toward_colour_detected(colour='yellow')
+                    data = self.move_toward_colour_detected(colour='white')
                     #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
                 	#starttime = time.time()
                     data = self.reset_arm() #Moves to the yellow mat and drops the block
                     #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Reset Arm", data, "Reset Arm", starttime, time.time(), "Yes"))
-                    '''
                     colours[found] -= 1 #removes a block from the dictionary of block amounts
                 else:
                     #self.SOUND.say('No colours detected') #if after the search the robot does not find any blocks from the selected colours it will end the mission
