@@ -135,7 +135,7 @@ def maintenance():
         date = request.form['date']
         problem = request.form['description']
 
-        DATABASE.ModifyQuery("INSERT INTO maintenance (userid, robotid, date, problem) VALUES (?,?,?,?)", (session['userid'], robotid, date, problem))
+        DATABASE.ModifyQuery("INSERT INTO maintenancelogs (userid, robotid, date, problem) VALUES (?,?,?,?)", (session['userid'], robotid, date, problem))
     
     robotids = DATABASE.ViewQuery("SELECT robotid FROM robots WHERE userid = ?", (session['userid'],))
     ids = []
@@ -143,7 +143,9 @@ def maintenance():
         for id in robotids:
             ids.append(id['robotid'])
 
-    return render_template('maintenance.html', ids=ids)
+    problems = DATABASE.ViewQuery("SELECT * FROM maintenancelogs WHERE userid = ?", (session['userid'],))
+
+    return render_template('maintenance.html', ids=ids, problems=problems)
 
 @app.route('/admin', methods=['GET','POST'])
 def admin():
@@ -155,14 +157,25 @@ def admin():
     else:
         return redirect('/')
 
-
 @app.route('/missionhistory', methods=['GET','POST'])
 def missionhistory():
     if 'userid' not in session:
         return redirect('/')
 
-    return render_template('missionhistory.html')
+    robotids = DATABASE.ViewQuery("SELECT robotid FROM robots WHERE userid = ?", (session['userid'],))
+    missions = []
+    actions = {}
+    if robotids != False:
+        for id in robotids:
+            missionquery = DATABASE.ViewQuery("SELECT * FROM missions WHERE robotid = ?", (id['robotid'],))
+            if missionquery != False:
+                missions.append(missionquery[0])
+    for mission in missions:
+        missionactions = DATABASE.ViewQuery("SELECT * FROM actions WHERE missionid = ?", (mission['missionid'],))
+        if missionactions != False:
+            actions[mission['missionid']] = missionactions
 
+    return render_template('missionhistory.html',missions=missions, actions=actions)
 
 @app.route('/look_up', methods=['GET','POST'])
 def look_up():

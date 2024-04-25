@@ -1,10 +1,55 @@
 {% extends "layout.html" %}
 {% block content %}
+
 <div class="page-header" id="banner">
     <div class="row">
         <h1>Mission History</h1>
     </div>
+    <div class="container">
+        <div class="row">
+            {% for mission in missions %}
+            <div class="col-md-6"> <!-- Adjust the column size as per your requirement -->
+                <div class="accordion" id="accordionFlush{{ mission['missionid'] }}">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-heading{{ mission['missionid'] }}">
+                            <button class="accordion-button collapsed d-flex flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ mission['missionid'] }}" aria-expanded="false" aria-controls="flush-collapse{{ mission['missionid'] }}">
+                                <div class="row">
+                                    {{ mission['starttime'] }}
+                                </div>
+                                <div class="row">
+                                    <div class="col">Red: {{ mission['red'] }}</div>
+                                    <div class="col">Green: {{ mission['green'] }}</div>
+                                    <div class="col">Blue: {{ mission['blue'] }}</div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse{{ mission['missionid'] }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ mission['missionid'] }}" data-bs-parent="#accordionFlush{{ mission['missionid'] }}">
+                            <div class="accordion-body">
+                                <h4>Actions:</h4><br>
+                                <div class='container'>
+                                {% for action in actions[mission['missionid']] %}
+                                    <div class='row'>
+                                        {% for key, value in action.items() %}
+                                            {% if key != 'missionid' and key != 'actionid' %}
+                                            {{value}},
+                                            {% endif %} 
+                                        {% endfor %}
+                                    </div>
+                                {% endfor %}
+                                {% if mission['missionid'] not in actions %}
+                                There are no actions
+                                {% endif %} 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
+
 {% endblock %}
 {% block scripts %}
 {% endblock %}

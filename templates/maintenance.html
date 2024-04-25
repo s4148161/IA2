@@ -5,7 +5,7 @@
         <h1>Maintenance</h1>
     </div>
     
-    <form class='row'>
+    <form action='/maintenance' method='POST' class='row'>
         <div class="form-group">
             <label for="exampleFormControlSelect1">Which robot has the problem?</label>
             <select class="form-control" name='robotid' id="exampleFormControlSelect1">
@@ -30,7 +30,22 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
-</div>
+    <h2>Past Problems</h2>
+    <div class="container">
+        <div class="row">
+            {% for problem in problems %} 
+            <div class="col-md-4">
+                <div class="card bg-primary mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Robot ID: {{problem['robotid']}}</h5>
+                        <h6>Date: {{problem['date']}}</h6>
+                        <p class="card-text">{{problem['problem']}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %} 
+        </div>
+    </div>
 {% endblock %}
 {% block scripts %}
 {% endblock %}
