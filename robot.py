@@ -41,6 +41,7 @@ class Robot(RobotInterface):
 
         if green > 0:
             colours['green'] = green 
+        #The if statements create the colours dictionary with the number of each colour block
 
         self.SOUND.load_mp3('static/music/missionimpossible.mp3')
 
@@ -51,6 +52,7 @@ class Robot(RobotInterface):
             while len(detection_colours) > 0: #loop continues until there are no blocks left
                 data = self.move_direction_until_detection(movetype='turnright',distanceto=250,detection_types=['colour'],detection_colours=detection_colours,timelimit=2,confirmlevel=1)
                 print(detection_colours, len(detection_colours))
+                #The robot moves around to the right looking for the required colours
                 found = 'none' 
                 
                 if 'red' in data['detect_colour']:
@@ -81,35 +83,29 @@ class Robot(RobotInterface):
                     data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
                     
                     data = self.pick_up_centered_object_with_look_down(data['y'])
+                    #The robot moves toward the coloured block it has detected, centres the arm and attempts a pickup
 
-                    data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
-
-                    while (self.was_object_pickup_successful(colour=found, timelimit=1))['success'] == False:
+                    while (self.was_object_pickup_successful(colour=found, timelimit=1))['success'] == False: #This loop checks if the block has been picked up and if it has not it repeats until it has been
                         if self.routine != 'automated_search':
                             break
                         data = self.move_toward_colour_detected(colour=found) #Moves toward the block
 
                         data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
 
-                        data = self.pick_up_centered_object_with_look_down(data['y'])
+                        data = self.pick_up_centered_object_with_look_down(data['y']) #attempts the pickup again after recentering the block
 
-                    #This loop will repeat aligning the arm with the block and attempting to pick it up
-                    data = self.look_up_closed()
-                    #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Look Up", data, "Look Up", starttime, time.time(), "Yes"))
-                	#starttime = time.time()
-                    while not data['detect_colour']:
-                        data = self.move_direction_until_detection(movetype='turnright',distanceto=250,detection_types=['colour'],detection_colours=['white'],timelimit=2,confirmlevel=1)
+                    data = self.look_up_closed() #once the block is in the arms it looks up
+
+                    data = self.move_direction_until_detection(movetype='turnright',distanceto=250,detection_types=['colour'],detection_colours=['white'],timelimit=3,confirmlevel=1)
 
                     data = self.move_toward_colour_detected(colour='white')
-                    #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
+
                     time.sleep(1)
-                	#starttime = time.time()
+
                     data = self.move_toward_colour_detected(colour='white')
-                    #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
-                	#starttime = time.time()
-                    data = self.reset_arm() #Moves to the yellow mat and drops the block
-                    #SQL_QUERY("INSERT INTO missions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (self.id, "Reset Arm", data, "Reset Arm", starttime, time.time(), "Yes"))
-                    colours[found] -= 1 #removes a block from the dictionary of block amounts
+
+                    data = self.look_up() #Moves to the yellow mat and drops the block
+                    colours[found] -= 1 #removes a block from the dictionary of block amounts then repeats until all of the blocks are picked up
                 else:
                     #self.SOUND.say('No colours detected') #if after the search the robot does not find any blocks from the selected colours it will end the mission
                     print("No colours detected")
@@ -130,21 +126,3 @@ if __name__ == '__main__':
     input("Press enter to begin testing:")
     ROBOT.automated_search()
 
-'''
-        self.routine = 'automated_search'
-        self.logger.info('Beginning Automated Search')
-        endtime = time.time() + timelimit
-
-        total_red = 0
-        total_green = 0
-        total_blue = 0
-        self.SOUND.load_mp3('static/music/missionimpossible.mp3')
-
-        while self.routine == 'automated_search' and time.time() < endtime:
-            self.SOUND.say('Searching for the colour red')
-            data = self.move_direction_until_detection(movetype='turnleft',distanceto=250,detection_types=['colour'],detection_colours=['red'],timelimit=2,confirmlevel=1)
-            self.SOUND.say('Colour detected')
-            break
-
-        return
-'''
