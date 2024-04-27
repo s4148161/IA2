@@ -220,7 +220,7 @@ class RobotInterface(MasterPiInterface):
         data['starttime'] = time.time()
         self.CAMERA.add_detection_task("detect_colour")
         self.CAMERA.add_detection_colour(colour)
-        self.set_boardLED_color(colour)
+        #self.set_boardLED_color(colour)
         centered = False
         x = 0; y = 0
         endtime = time.time() + timelimit
@@ -321,10 +321,10 @@ class RobotInterface(MasterPiInterface):
         data = {}
         data['command'] = self.command
         data['starttime'] = time.time()
-        self.set_boardLED_color(colour)
+        #self.set_boardLED_color(colour)
         self.CAMERA.add_detection_task("detect_colour")
         self.CAMERA.add_detection_colour(colour)
-        self.set_boardLED_color(colour)
+        #self.set_boardLED_color(colour)
         endtime = time.time() + timelimit
         centered = False
         
