@@ -17,9 +17,10 @@ def CreateDetectionColours(colours):
 
 class Robot(RobotInterface): 
     
-    def __init__(self, DATABASE):
+    def __init__(self, DATABASE, userid):
         super().__init__()
         self.DATABASE = DATABASE
+        self.robotid = userid 
         self.routine = "Ready" #use this stop or start routines
         return
      
@@ -46,14 +47,15 @@ class Robot(RobotInterface):
         self.SOUND.load_mp3('static/music/missionimpossible.mp3')
 
         while self.routine == 'automated_search' and time.time() < endtime:
-            #self.SOUND.say('Searching')
             detection_colours = CreateDetectionColours(colours) #uses function above to get colours still being looked for
+            robotid = self.robotid
 
             while len(detection_colours) > 0: #loop continues until there are no blocks left
+                starttime = time.time()
                 data = self.move_direction_until_detection(movetype='turnright',distanceto=250,detection_types=['colour'],detection_colours=detection_colours,timelimit=2,confirmlevel=1)
-                print(detection_colours, len(detection_colours))
+                self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Move Direction Until Detection", data, "Turn Left", starttime, time.time(), "Yes"))
                 #The robot moves around to the right looking for the required colours
-                found = 'none' 
+                found = 'none'
                 
                 if 'red' in data['detect_colour']:
                     if 'found' in data['detect_colour']['red']:
@@ -68,46 +70,70 @@ class Robot(RobotInterface):
 
                 self.stop()
                 if found != 'none':
-                    #self.SOUND.say("Moving towards object")
-                    print(detection_colours,found)
+                    starttime = time.time()
                     data = self.move_toward_colour_detected(colour=found)
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Move Direction Until Detection", data, "Turn Left", starttime, time.time(), "Yes"))
                     if self.routine != 'automated_search':
                         break
+                    starttime = time.time()
                     self.look_down()
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Look Down", data, "Look Down", starttime, time.time(), "Yes"))
                     time.sleep(1)
+                    starttime = time.time()
                     data = self.move_toward_colour_detected(colour=found) #Moves toward the block
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
 
                     if self.routine != 'automated_search':
                         break
 
+                    starttime = time.time()
                     data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Rotate Arm Until Colour Detected is Centered", data, "Rotate Arm", starttime, time.time(), "Yes"))
                     
+                    starttime = time.time()
                     data = self.pick_up_centered_object_with_look_down(data['y'])
                     #The robot moves toward the coloured block it has detected, centres the arm and attempts a pickup
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Pick Up Centred Object with Look Down", data, "Pick Up", starttime, time.time(), (self.was_object_pickup_successful())['success']))
 
                     while (self.was_object_pickup_successful(colour=found, timelimit=1))['success'] == False: #This loop checks if the block has been picked up and if it has not it repeats until it has been
                         if self.routine != 'automated_search':
                             break
+                        starttime = time.time()
                         data = self.move_toward_colour_detected(colour=found) #Moves toward the block
+                        self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
 
+                        starttime = time.time()
                         data = self.rotate_arm_until_colour_detected_is_centered(colour=found)
+                        self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Rotate Arm Until Colour Detected is Centered", data, "Rotate Arm", starttime, time.time(), "Yes"))
 
+                        starttime = time.time()
                         data = self.pick_up_centered_object_with_look_down(data['y']) #attempts the pickup again after recentering the block
+                        self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Pick Up Centred Object with Look Down", data, "Pick Up", starttime, time.time(), (self.was_object_pickup_successful())['success']))
 
+                    starttime = time.time()
                     data = self.look_up_closed() #once the block is in the arms it looks up
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Look Up", data, "Look Up", starttime, time.time(), "Yes"))
 
+                    starttime = time.time()
                     data = self.move_direction_until_detection(movetype='turnright',distanceto=250,detection_types=['colour'],detection_colours=['white'],timelimit=3,confirmlevel=1)
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Move direction untill detection", data, "Turn Right", starttime, time.time(), "Yes"))
 
+                    starttime = time.time()
                     data = self.move_toward_colour_detected(colour='white')
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
 
                     time.sleep(1)
 
+                    starttime = time.time()
                     data = self.move_toward_colour_detected(colour='white')
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Move Toward Colour Detected", data, "Forward", starttime, time.time(), "Yes"))
 
+                    starttime = time.time()
                     data = self.look_up() #Moves to the yellow mat and drops the block
+                    self.DATABASE.ModifyQuery("INSERT INTO actions (robotid, command, detectiondata, movementtype, starttime, endtime, success) VALUES (?,?,?,?,?,?,?)", (robotid, "Reset Arm", data, "Reset Arm", starttime, time.time(), "Yes"))
                     colours[found] -= 1 #removes a block from the dictionary of block amounts then repeats until all of the blocks are picked up
                 else:
-                    #self.SOUND.say('No colours detected') #if after the search the robot does not find any blocks from the selected colours it will end the mission
+                    #if after the search the robot does not find any blocks from the selected colours it will end the mission
                     print("No colours detected")
                     break
                 break
@@ -121,7 +147,7 @@ class Robot(RobotInterface):
     
 # Only execute if this is the main file, good for testing code
 if __name__ == '__main__':
-    ROBOT = Robot(None)
+    ROBOT = Robot(None,None)
     ROBOT.stop()
     input("Press enter to begin testing:")
     ROBOT.automated_search()

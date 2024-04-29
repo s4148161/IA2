@@ -1,7 +1,7 @@
 from flask import *
 from interfaces.databaseinterface import Database
 from interfaces.hashing import *
-#from robot import Robot
+from robot import Robot
 import logging, time, sys
 
 #---CONFIGURE APP---------------------------------------------------
@@ -119,7 +119,7 @@ def load_robot():
     global ROBOT
     if not ROBOT:
         app.logger.info('Loading Robot')
-        #ROBOT = Robot(DATABASE)
+        ROBOT = Robot(DATABASE, session['userid'])
         time.sleep(3) #takes 3 seconds to load the robot
     return jsonify({'message':'robot loaded'})
 
