@@ -1,7 +1,7 @@
 from flask import *
 from interfaces.databaseinterface import Database
 from interfaces.hashing import *
-from robot import Robot
+#from robot import Robot
 import logging, time, sys
 
 #---CONFIGURE APP---------------------------------------------------
@@ -119,7 +119,7 @@ def load_robot():
     global ROBOT
     if not ROBOT:
         app.logger.info('Loading Robot')
-        ROBOT = Robot(DATABASE)
+        #ROBOT = Robot(DATABASE)
         time.sleep(3) #takes 3 seconds to load the robot
     return jsonify({'message':'robot loaded'})
 
@@ -195,6 +195,20 @@ def look_down():
     if ROBOT:
         ROBOT.look_down() #tells the robot to look down
     return jsonify({'message':'look down'})
+
+@app.route('/turn_right', methods=['GET','POST'])
+def turn_right():
+    app.logger.info('turn right')
+    if ROBOT:
+        ROBOT.rotate_speed_time(timelimit=2) #tells the robot to look down
+    return jsonify({'message':'turn right'})
+
+@app.route('/turn_left', methods=['GET','POST'])
+def turn_left():
+    app.logger.info('turn left')
+    if ROBOT:
+        ROBOT.rotate_speed_time(rotationspeed=-0.1, timelimit=2) #tells the robot to look down
+    return jsonify({'message':'turn left'})
 
 @app.route('/move_forward/<angle>', methods=['GET','POST'])
 def move_forward(angle):
